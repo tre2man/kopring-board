@@ -1,0 +1,16 @@
+# postgres
+
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    environment:
+      POSTGRES_USER: namuboard
+      POSTGRES_PASSWORD: namuboard
+      POSTGRES_DB: namuboard
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data:/var/lib/postgresql/data
