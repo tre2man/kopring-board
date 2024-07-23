@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class NamuboardApplication
 
 fun main(args: Array<String>) {
-	runApplication<NamuboardApplication>(*args)
+    runApplication<NamuboardApplication>(*args)
 }
